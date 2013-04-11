@@ -190,9 +190,6 @@ class Nyandiscuss extends Public_Controller {
 		if($topic_id)
 			$data['return_link'] .= '/'.$topic_id;
 
-		$this->template
-			->append_metadata($this->load->view('fragments/wysiwyg', $this->data, TRUE));
-
 		$this->template->build('create_thread', $data);
 	}
 
